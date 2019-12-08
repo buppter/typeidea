@@ -8,7 +8,13 @@ DEBUG = True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'typeidea',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': '10.112.56.141',
+        'PORT': 3306,
+        'CONN_MAX_AGE': 5 * 60,
+        'OPTIONS': {'charset': 'utf8mb4'}
     }
 }
