@@ -21,7 +21,7 @@
                 <span class="card-link">分类:<a
                         href="{% url 'category_list' post.category_id %}">{{ post.category.name }}</a></span>
                 <span class="card-link">标签:
-                    {% for tag in post.tag %}
+                    {% for tag in post.tag.all %}
                         <a href="{% url 'tag_list' tag.id %}">{{ tag.name }}</a>
                     {% endfor %}
             </span>
