@@ -1,4 +1,4 @@
-Django==1.11.23
+Django==3.0
 django-debug-toolbar==2.1
 mistune==0.8.4
 mysqlclient==1.4.6
